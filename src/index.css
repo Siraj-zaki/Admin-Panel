@@ -17,9 +17,15 @@ body {
 .makeStyles-drawerPaper-6 {
   background: #960200!important;
 }
-.MuiTypography-body1{
+
+.MuiTypography-body1 {
   color: white!important;
 }
-.MuiListItemIcon-root{
+
+.MuiListItemIcon-root {
   color: white!important;
+}
+
+.jss6 {
+  background: #960200!important;
 }
