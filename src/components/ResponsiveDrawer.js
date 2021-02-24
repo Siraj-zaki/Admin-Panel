@@ -1,20 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
-import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import AddIcon from '@material-ui/icons/Add';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ViewListIcon from '@material-ui/icons/ViewList';
+import GroupIcon from '@material-ui/icons/Group';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
-import MenuIcon from '@material-ui/icons/Menu';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import TuneIcon from '@material-ui/icons/Tune';
+import logo from '../assets/log.png'
+
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 const drawerWidth = 240;
@@ -65,31 +63,34 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div>
+      <img src={logo} alt="" style={{marginTop:40,marginLeft:20}} />
+
       <div className={classes.toolbar} />
+      
       <Divider />
       <List>
         <a href="/DashBoard">
           <ListItem button key="Add Item">
-            <ListItemIcon>{<MailIcon />}</ListItemIcon>
+            <ListItemIcon>{<AddIcon />}</ListItemIcon>
             <ListItemText primary="Add Item" />
           </ListItem>
         </a>
         <a href="/ViewItem">
           <ListItem button key="View Item">
-            <ListItemIcon>{<MailIcon />}</ListItemIcon>
+            <ListItemIcon>{<ViewListIcon />}</ListItemIcon>
             <ListItemText primary="View Item" />
           </ListItem>
         </a>
 
         <a href="/Orders">
           <ListItem button key="Orders">
-            <ListItemIcon>{<MailIcon />}</ListItemIcon>
+            <ListItemIcon>{<TuneIcon />}</ListItemIcon>
             <ListItemText primary="Orders" />
           </ListItem>
         </a>
         <a href="/Users">
           <ListItem button key="Users">
-            <ListItemIcon>{<MailIcon />}</ListItemIcon>
+            <ListItemIcon>{<GroupIcon />}</ListItemIcon>
             <ListItemText primary="Users" />
           </ListItem>
         </a>

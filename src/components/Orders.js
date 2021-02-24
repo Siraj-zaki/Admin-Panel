@@ -7,8 +7,8 @@ import '../index.css'
 
 class Orders extends React.Component {
   state={
-    orderid:"",
-    orderstatus:'',
+    sliderid:"",
+    sliderstatus:'',
     title:'',
     btntext:'',
     btnlink:'',
@@ -25,16 +25,16 @@ class Orders extends React.Component {
                 <section class="content">
         <div class="container-fluid">
    <div class="container bg-white p-4 mt-5 shadow" style={{borderRadius: "10px"}}>
-    <h5 class="mb-2">Add New Order</h5>
+    <h5 class="mb-2">Sliders</h5>
       <hr/>
      <div class="row">
        <div class="ol-sm-12 col-md-4 col-4">
        <form method="post" action="https://clinkdelivery.com/admin/slider" enctype="multipart/form-data">
        <input type="hidden" name="_token" value="lDU5tVnWtVuj7m96v2TCsgetZ5WDKunqIbJaIVnX"></input>          
         <div class="form-group">
-                <label for="name" class="font-weight-bold">Order ID</label>
-                <input type="hidden" name="sldid" id="sldId" onChange={(e) => this.setState({orderid: e.target.value})}></input>
-                <input type="text" onChange={(e) => this.setState({orderid: e.target.value})} class="form-control " aria-describedby="text" placeholder="Auto Assigned" disabled=""></input>
+                <label for="name" class="font-weight-bold">SLider ID</label>
+                <input type="hidden" name="sldid" id="sldId" onChange={(e) => this.setState({sliderid: e.target.value})}></input>
+                <input type="text" onChange={(e) => this.setState({sliderid: e.target.value})} class="form-control " aria-describedby="text" placeholder="Auto Assigned" disabled=""></input>
               </div>
                <div class="form-group">
                 <label for="title" class="font-weight-bold">Title</label>
@@ -50,25 +50,12 @@ class Orders extends React.Component {
        </div>
        <div class="col-sm-12 col-md-4 col-4">
               <div class="form-group">
-                <label class="font-weight-bold">Order Status</label><small class="req"> *</small>
-                  <select onChange={(e) => this.setState({orderstatus: e.target.value})} id="sldStatus" name="status" class="form-control">
+                <label class="font-weight-bold">Slider Status</label><small class="req"> *</small>
+                  <select onChange={(e) => this.setState({sliderstatus: e.target.value})} id="sldStatus" name="status" class="form-control">
                           <option value="active">Active</option>
                           <option value="not active">Not Active</option>
-                         
                   </select>    
-              </div>
-
-               <div class="form-group">
-                <label for="btn_text" class="font-weight-bold">Button Text</label>
-                <input type="text" onChange={(e) => this.setState({btntext: e.target.value})} name="btntext" class="form-control " id="sldBtntext" aria-describedby="text" placeholder="Button Text"></input>
-                
-              </div>
-                <div class="form-group">
-                <label for="btn_link" class="font-weight-bold">Button Link</label>
-                <input type="text" name="href" class="form-control " onChange={(e) => this.setState({btnlink: e.target.value})} id="sldBtnlink" aria-describedby="text" placeholder="Button Link"></input>
-              </div>
-       </div>
-       <div class="col-sm-12 col-md-4 col-4">
+                  <div class="col-sm-12 col-md-4 col-4 mt-4">
                <div class="form-group">
                 <label for="btn_text" class="font-weight-bold">Image</label><br/>
                  <img src="./Orders_files/default.jpg" id="sldImage" onChange={(e) => this.setState({image: e.target.files[0]})} alt="" class="img-fluid" style={{width: "250px"}}></img>
@@ -79,10 +66,14 @@ class Orders extends React.Component {
               </div>
                <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Save</button>
        </div>
+              </div>
+
+       </div>
+       
      </div>
    </div>
   <div class="container bg-white p-4 mt-5 shadow mb-5" style={{borderRadius: "10px"}}>
-    <h4><i class="fa fa-image"></i>Orders</h4>
+    <h4><i class="fa fa-image"></i>Slider</h4>
     <hr/>
 
       <div style={{overflowX:"auto"}} class="w-100">
@@ -90,11 +81,9 @@ class Orders extends React.Component {
                        <table class="table  table-bordered mx-auto">
               <thead class="thead-light">
                 <tr>
-                <th class="row_style">Order Image</th>
+                <th class="row_style">Silder Image</th>
                   <th class="row_style">Title</th>
                   <th class="row_style">Description</th>
-                  <th class="row_style">Button Text</th>
-                  <th class="row_style">Button Link</th>
                   <th class="row_style">Status</th>
                    <th class="row_style">Action</th>
                 </tr>
@@ -109,10 +98,7 @@ class Orders extends React.Component {
                      </td>
                      <td class="SliderDescription">Every celebration deserves a clink! Have your favorite Alcohol delivered to you instantly with Clink Delivery we provide you with .
                        </td>
-                       <td class="SliderBtntext">Products
-                         </td>
-                         <td class="SliderBtnlink">https://clinkdelivery.com/products
-                         </td>
+                     
                          <td class="SliderStatus">active
                            
                              </td>
