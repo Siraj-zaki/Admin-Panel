@@ -6,116 +6,119 @@ import '../responsive.bootstrap4.min.css'
 import '../index.css'
 
 class Orders extends React.Component {
-  state={
-    sliderid:"",
-    sliderstatus:'',
-    title:'',
-    btntext:'',
-    btnlink:'',
-    description:'',
-    image:'',
+  state = {
+    orderid: '',
+    productname: '',
+    price: '',
+    image: '',
   }
 
-    render() {
-        console.log(this.state);
 
-        return (
-            <div className="dashboard" style={{paddingTop:100}}>
-                <ResponsiveDrawer />
-                <section class="content">
-        <div class="container-fluid">
-   <div class="container bg-white p-4 mt-5 shadow" style={{borderRadius: "10px"}}>
-    <h5 class="mb-2">Sliders</h5>
-      <hr/>
-     <div class="row">
-       <div class="ol-sm-12 col-md-4 col-4">
-       <form method="post" action="https://clinkdelivery.com/admin/slider" enctype="multipart/form-data">
-       <input type="hidden" name="_token" value="lDU5tVnWtVuj7m96v2TCsgetZ5WDKunqIbJaIVnX"></input>          
-        <div class="form-group">
-                <label for="name" class="font-weight-bold">SLider ID</label>
-                <input type="hidden" name="sldid" id="sldId" onChange={(e) => this.setState({sliderid: e.target.value})}></input>
-                <input type="text" onChange={(e) => this.setState({sliderid: e.target.value})} class="form-control " aria-describedby="text" placeholder="Auto Assigned" disabled=""></input>
-              </div>
-               <div class="form-group">
-                <label for="title" class="font-weight-bold">Title</label>
-                <input type="text" id="sldTitle" class="form-control" onChange={(e) => this.setState({title: e.target.value})} name="title" aria-describedby="text" placeholder="Title"></input>
-              </div>
-               <div class="form-group">
-                <label for="description" class="font-weight-bold">Description</label>
-                <textarea id="sldDescription" name="description"onChange={(e) => this.setState({description: e.target.value})} placeholder="write..." class="form-control w-100" rows="3"></textarea>
-                
-              </div>
-           
-       </form>
-       </div>
-       <div class="col-sm-12 col-md-4 col-4">
-              <div class="form-group">
-                <label class="font-weight-bold">Slider Status</label><small class="req"> *</small>
-                  <select onChange={(e) => this.setState({sliderstatus: e.target.value})} id="sldStatus" name="status" class="form-control">
-                          <option value="active">Active</option>
-                          <option value="not active">Not Active</option>
-                  </select>    
-                  <div class="col-sm-12 col-md-4 col-4 mt-4">
-               <div class="form-group">
-                <label for="btn_text" class="font-weight-bold">Image</label><br/>
-                 <img src="./Orders_files/default.jpg" id="sldImage" onChange={(e) => this.setState({image: e.target.files[0]})} alt="" class="img-fluid" style={{width: "250px"}}></img>
-              </div>
-               
-              <div class="form-group">
-                <input type="file" name="slimg" id="showImgSlid" class="form-control-plaintext " aria-describedby="text" placeholder="Auto Assigned"></input>
-              </div>
-               <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Save</button>
-       </div>
-              </div>
+  render() {
+    console.log(this.state);
 
-       </div>
-       
-     </div>
-   </div>
-  <div class="container bg-white p-4 mt-5 shadow mb-5" style={{borderRadius: "10px"}}>
-    <h4><i class="fa fa-image"></i>Slider</h4>
-    <hr/>
+    return (
+      <div className="dashboard" style={{ paddingTop: 100 }}>
 
-      <div style={{overflowX:"auto"}} class="w-100">
-                      
-                       <table class="table  table-bordered mx-auto">
-              <thead class="thead-light">
-                <tr>
-                <th class="row_style">Silder Image</th>
-                  <th class="row_style">Title</th>
-                  <th class="row_style">Description</th>
-                  <th class="row_style">Status</th>
-                   <th class="row_style">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                                                    <tr>
-                    <input type="hidden" class="SliderId" value="2"></input>
-                <td>
-                    <img class="SliderImg" src="./Orders_files/1611224843.png" width="40px" height="40px" alt="Slider"></img>
-                  </td>
-                  <td class="SliderTitle">Time to Clink it up
-                     </td>
-                     <td class="SliderDescription">Every celebration deserves a clink! Have your favorite Alcohol delivered to you instantly with Clink Delivery we provide you with .
-                       </td>
-                     
-                         <td class="SliderStatus">active
-                           
-                             </td>
-                             <td>
-                                 <a style={{marginRight: "20px"}} href="https://clinkdelivery.com/admin/front-slider#" class="EditSliderD">Edit</a> <a href="https://clinkdelivery.com/admin/sldel/2" style={{color: "red"}}>Delete</a>
-               
-                </td>
-                </tr>
-                                                               </tbody>
-            </table>
+        <ResponsiveDrawer />
+        <section class="content">
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <tfooter>
+                </tfooter>
+                <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_length" id="example1_length">
+                        <label>Show <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm">
+                          <option value="10">10</option>
+                          <option value="25">25</option>
+                          <option value="50">50</option>
+                          <option value="100">100</option>
+                        </select>
+                                        entries
+                                        </label>
+                      </div>
                     </div>
-  </div>
-        </div>
-        </section>
-            </div>
-        )
+                    <div class="col-sm-12 col-md-6">
+                      <div id="example1_filter" class="dataTables_filter">
+                        <label>Search:
+                                                    <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></input>
+                        </label>
+                      </div>
+                    </div>
 
-    }
+
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table id="example1" class="table table-bordered table-hover dataTable no-footer dtr-inline" role="grid" aria-describedby="example1_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Sr.#: activate to sort column ascending">
+                              Sr.#
+                                                      </th>
+                            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Bottle Image: activate to sort column ascending">
+                              Image
+                                                          </th>
+                            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">
+                              Category
+                                                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">
+                              Product Name
+                                                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">
+                              Price
+                                                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Delete: activate to sort column ascending">
+                              Delete
+                                                              </th>
+                            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="edit: activate to sort column ascending">
+                              edit</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr role="row" class="odd">
+                            <td tabindex="0" class="">1</td>
+                            <td>
+                              <a target="_blank" href="./viewitemhtml_files/1603476881.png">
+                                <img src="./viewitemhtml_files/1603476881.png" style={{ width: "80px", height: "80px" }}></img>
+                              </a>
+                            </td>
+                            <td>Tequila</td>
+                            <td>chicken</td>
+                            <td>234$</td>
+                            <td><a href="https://clinkdelivery.com/admin/categories/delete/1" class="btn btn-danger">Delete</a></td>
+                            <td><a href="https://clinkdelivery.com/admin/categories/edit/1" class="btn btn-info">Edit</a></td>
+                          </tr>
+                        </tbody>
+                        <tbody><tr>
+                          <th>Sr.#</th>
+                          <th>Image</th>
+                          <th>Category</th>
+                          <th>Product</th>
+                          <th>Price</th>
+
+                          <th>Delete</th>
+                          <th>edit</th>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 6 of 6 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="example1_previous"><a href="https://clinkdelivery.com/admin/categories#" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="https://clinkdelivery.com/admin/categories#" aria-controls="example1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="example1_next"><a href="https://clinkdelivery.com/admin/categories#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+
+  }
 }
 export default Orders

@@ -11,6 +11,8 @@ import ViewListIcon from '@material-ui/icons/ViewList';
 import GroupIcon from '@material-ui/icons/Group';
 import ListItemText from '@material-ui/core/ListItemText';
 import TuneIcon from '@material-ui/icons/Tune';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
+import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 import logo from '../assets/log.png'
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -63,10 +65,10 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <div>
-      <img src={logo} alt="" style={{marginTop:40,marginLeft:20}} />
+      <img src={logo} alt="" style={{ marginTop: 40, marginLeft: 20 }} />
 
       <div className={classes.toolbar} />
-      
+
       <Divider />
       <List>
         <a href="/DashBoard">
@@ -84,7 +86,7 @@ function ResponsiveDrawer(props) {
 
         <a href="/Orders">
           <ListItem button key="Orders">
-            <ListItemIcon>{<TuneIcon />}</ListItemIcon>
+            <ListItemIcon>{<LocalMallIcon />}</ListItemIcon>
             <ListItemText primary="Orders" />
           </ListItem>
         </a>
@@ -92,6 +94,18 @@ function ResponsiveDrawer(props) {
           <ListItem button key="Users">
             <ListItemIcon>{<GroupIcon />}</ListItemIcon>
             <ListItemText primary="Users" />
+          </ListItem>
+        </a>
+        <a href="/Slider">
+          <ListItem button key="Slider">
+            <ListItemIcon>{<TuneIcon />}</ListItemIcon>
+            <ListItemText primary="Slider" />
+          </ListItem>
+        </a>
+        <a href="/Coupon">
+          <ListItem button key="Coupon">
+            <ListItemIcon>{<LocalAtmIcon />}</ListItemIcon>
+            <ListItemText primary="Coupons" />
           </ListItem>
         </a>
 
