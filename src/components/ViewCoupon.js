@@ -6,7 +6,7 @@ import AddItem from './AddItem'
 import '../responsive.bootstrap4.min.css'
 import '../index.css'
 
-class DashBoard extends React.Component {
+class ViewCoupon extends React.Component {
 
     render() {
         console.log(this.state);
@@ -54,16 +54,16 @@ class DashBoard extends React.Component {
                                                             Sr.#
                                                             </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Bottle Image: activate to sort column ascending">
-                                                            Name
+                                                            Coupon Code
                                                                     </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Bottle Image: activate to sort column ascending">
-                                                            Image
+                                                            Max Discount
                                                                     </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">
-                                                            Description
+                                                            Discount %
                                                                         </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Delete: activate to sort column ascending">
-                                                            Price
+                                                            Expiray Date
                                                                             </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="edit: activate to sort column ascending">
                                                             Delete
@@ -78,15 +78,13 @@ class DashBoard extends React.Component {
                                                     <tr role="row" class="odd">
                                                         <td tabindex="0" class="">1</td>
                                                         <td class="sorting_1">
-                                                            Anjum
+                                                            ASDKAJDAKLSD2j3l
                                                         </td>
                                                         <td>
-                                                            <a target="_blank" href="./viewitemhtml_files/1603476881.png">
-                                                                <img src="./viewitemhtml_files/1603476881.png" style={{ width: "80px", height: "80px" }}></img>
-                                                            </a>
+                                                            -/-
                                                         </td>
-                                                        <td>Tequila</td>
-                                                        <td>20$</td>
+                                                        <td>50%</td>
+                                                        <td>3/5/2021</td>
                                                         <td><a href="https://clinkdelivery.com/admin/categories/delete/1" class="btn btn-danger">Delete</a></td>
                                                         <td><a href="https://clinkdelivery.com/admin/categories/edit/1" class="btn btn-info">Edit</a></td>
                                                     </tr>
@@ -106,4 +104,4 @@ class DashBoard extends React.Component {
 
     }
 }
-export default DashBoard
+export default ViewCoupon

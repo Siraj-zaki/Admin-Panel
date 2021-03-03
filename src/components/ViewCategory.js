@@ -54,7 +54,7 @@ class DashBoard extends React.Component {
                                                             Sr.#
                                                             </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Bottle Image: activate to sort column ascending">
-                                                            Name
+                                                            Category  Name
                                                                     </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Bottle Image: activate to sort column ascending">
                                                             Image
@@ -62,9 +62,6 @@ class DashBoard extends React.Component {
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">
                                                             Description
                                                                         </th>
-                                                        <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Delete: activate to sort column ascending">
-                                                            Price
-                                                                            </th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="edit: activate to sort column ascending">
                                                             Delete
                                                             </th>
@@ -86,7 +83,6 @@ class DashBoard extends React.Component {
                                                             </a>
                                                         </td>
                                                         <td>Tequila</td>
-                                                        <td>20$</td>
                                                         <td><a href="https://clinkdelivery.com/admin/categories/delete/1" class="btn btn-danger">Delete</a></td>
                                                         <td><a href="https://clinkdelivery.com/admin/categories/edit/1" class="btn btn-info">Edit</a></td>
                                                     </tr>

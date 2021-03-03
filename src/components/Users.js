@@ -54,7 +54,7 @@ class User extends React.Component {
                                         <div class="col-sm-12">
                                             <table id="example1" class="table table-bordered table-hover dataTable no-footer dtr-inline" role="grid" aria-describedby="example1_info">
                                                 <thead>
-                                                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No.: activate to sort column descending">No.</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" >Email</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Time: activate to sort column ascending" >Time</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Delete: activate to sort column ascending" >Delete</th></tr>
+                                                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No.: activate to sort column descending">No.</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" >Email</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Time: activate to sort column ascending" >Time</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Delete: activate to sort column ascending" >Block</th></tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr role="row" class="odd">
@@ -64,7 +64,7 @@ class User extends React.Component {
                                                             2021-02-17 10:25:47
                         </td>
                                                         <td >
-                                                            <a href="https://clinkdelivery.com/admin/subscriber/delete/27" class="btn btn-danger">Delete</a></td>
+                                                            <a href="https://clinkdelivery.com/admin/subscriber/delete/27" class="btn btn-danger">Block</a></td>
                                                     </tr>
                                                     <tr role="row" class="even">
                                                         <td tabindex="0" class="sorting_1">10</td>
@@ -73,16 +73,8 @@ class User extends React.Component {
                                                             2020-11-19 21:51:22
                         </td>
                                                         <td>
-                                                            <a href="https://clinkdelivery.com/admin/subscriber/delete/18" class="btn btn-danger">Delete</a></td>
+                                                            <a href="https://clinkdelivery.com/admin/subscriber/delete/18" class="btn btn-danger">Block</a></td>
                                                     </tr></tbody>
-                                                <tbody><tr>
-                                                    <th>No.</th>
-                                                    <th>Email</th>
-                                                    <th>Time</th>
-                                                    <th>Delete</th>
-                                                </tr>
-
-                                                </tbody>
                                             </table>
                                         </div>
                                     </div>

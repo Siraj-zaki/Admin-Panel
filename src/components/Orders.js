@@ -61,7 +61,7 @@ class Orders extends React.Component {
                               Sr.#
                                                       </th>
                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Bottle Image: activate to sort column ascending">
-                              Image
+                              User Name
                                                           </th>
                             <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">
                               Category
@@ -83,9 +83,7 @@ class Orders extends React.Component {
                           <tr role="row" class="odd">
                             <td tabindex="0" class="">1</td>
                             <td>
-                              <a target="_blank" href="./viewitemhtml_files/1603476881.png">
-                                <img src="./viewitemhtml_files/1603476881.png" style={{ width: "80px", height: "80px" }}></img>
-                              </a>
+                              Anjum
                             </td>
                             <td>Tequila</td>
                             <td>chicken</td>
@@ -93,18 +91,6 @@ class Orders extends React.Component {
                             <td><a href="https://clinkdelivery.com/admin/categories/delete/1" class="btn btn-danger">Delete</a></td>
                             <td><a href="https://clinkdelivery.com/admin/categories/edit/1" class="btn btn-info">Edit</a></td>
                           </tr>
-                        </tbody>
-                        <tbody><tr>
-                          <th>Sr.#</th>
-                          <th>Image</th>
-                          <th>Category</th>
-                          <th>Product</th>
-                          <th>Price</th>
-
-                          <th>Delete</th>
-                          <th>edit</th>
-                        </tr>
-
                         </tbody>
                       </table>
                     </div>

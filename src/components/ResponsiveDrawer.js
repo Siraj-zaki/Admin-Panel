@@ -6,6 +6,7 @@ import Hidden from '@material-ui/core/Hidden';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import AddIcon from '@material-ui/icons/Add';
+import CategoryIcon from '@material-ui/icons/Category';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ViewListIcon from '@material-ui/icons/ViewList';
 import GroupIcon from '@material-ui/icons/Group';
@@ -108,6 +109,25 @@ function ResponsiveDrawer(props) {
             <ListItemText primary="Coupons" />
           </ListItem>
         </a>
+        <a href="/ViewCoupon">
+          <ListItem button key="ViewCoupon">
+            <ListItemIcon>{<LocalAtmIcon />}</ListItemIcon>
+            <ListItemText primary="View Coupon " />
+          </ListItem>
+        </a>
+        <a href="/AddCategory">
+          <ListItem button key="Add Category">
+            <ListItemIcon>{<CategoryIcon />}</ListItemIcon>
+            <ListItemText primary="Add Category " />
+          </ListItem>
+        </a>
+        <a href="/ViewCategory">
+          <ListItem button key="View Category">
+            <ListItemIcon>{<CategoryIcon />}</ListItemIcon>
+            <ListItemText primary="View Category " />
+          </ListItem>
+        </a>
+
 
 
       </List>

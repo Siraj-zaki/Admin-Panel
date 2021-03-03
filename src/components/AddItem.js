@@ -44,16 +44,16 @@ import { Alert } from '@material-ui/lab';
                       <input type="text" name="name" value={this.state.name} placeholder="john etc" required="" class="form-control" onChange={(e) => this.setState({ name: e.target.value })}></input>
                     </div>
                     <div class="form-group">
+                      <lable>Price</lable>
+                      <input type="text" name="name" value={this.state.name} placeholder="22$ etc" required="" class="form-control" onChange={(e) => this.setState({ name: e.target.value })}></input>
+                    </div>
+                    <div class="form-group">
                       <lable>description</lable>
                       <textarea name="description" required="" value={this.state.description} class="form-control" onChange={(e) => this.setState({ description: e.target.value })} cols="6" rows="6"></textarea>
                     </div>
                     <div class="form-group">
-                      <lable>Category Cover Image</lable>
-                      <input type="file" class="input form-control" name="category_cover" accept="image/*" required="" onChange={(e) => this.setState({ coverimage: e.target.files[0] })} ></input>
-                    </div>
-                    <div class="form-group">
-                      <lable>Category Image</lable>
-                      <input type="file" class="input form-control" name="category_bottle" accept="image/*" required="" onChange={(e) => this.setState({ catgoryimg: e.target.files[0] })}></input>
+                      <lable>Image</lable>
+                      <input inputProps={{ accept: 'image/*' }} type="file" class="input form-control" name="category_bottle" accept="image/*" required="" onChange={(e) => this.setState({ catgoryimg: e.target.files[0] })}></input>
                     </div>
                     <button type="submit" onSubmit={(e) => e.preventDefault()} class="btn btn-success">Save</button>
                   </form>

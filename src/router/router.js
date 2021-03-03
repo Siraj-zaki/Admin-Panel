@@ -6,6 +6,9 @@ import Users from '../components/Users'
 import Orders from '../components/Orders'
 import Slider from '../components/Slider'
 import Coupon from '../components/Coupon'
+import ViewCoupon from '../components/ViewCoupon'
+import AddCategory from '../components/AddCategory'
+import ViewCategory from '../components/ViewCategory'
 
 class ReactRouter extends React.Component {
   render() {
@@ -18,6 +21,9 @@ class ReactRouter extends React.Component {
         <Route path="/Orders" component={Orders} />
         <Route path="/Slider" component={Slider} />
         <Route path="/Coupon" component={Coupon} />
+        <Route path="/ViewCoupon" component={ViewCoupon} />
+        <Route path="/AddCategory" component={AddCategory} />
+        <Route path="/ViewCategory" component={ViewCategory} />
       </React.Fragment>
     );
   }

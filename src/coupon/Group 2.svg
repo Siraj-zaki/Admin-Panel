@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="637" height="237.005" viewBox="0 0 637 237.005">
+  <g id="Group_2" data-name="Group 2" transform="translate(5 -401)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="550" height="237" transform="translate(82 401)" fill="#bfaeae"/>
+    <path id="path480" d="M159.666-589.583H66.633v8.345a7.506,7.506,0,0,1,7.5,7.511,7.5,7.5,0,0,1-7.5,7.511v7.975a7.5,7.5,0,0,1,7.5,7.511,7.506,7.506,0,0,1-7.5,7.511v7.974a7.5,7.5,0,0,1,7.5,7.511,7.5,7.5,0,0,1-7.5,7.511v7.974a7.505,7.505,0,0,1,7.5,7.511,7.5,7.5,0,0,1-7.5,7.511v7.974a7.506,7.506,0,0,1,7.5,7.511,7.5,7.5,0,0,1-7.5,7.511v7.975a7.5,7.5,0,0,1,7.5,7.511,7.506,7.506,0,0,1-7.5,7.511v7.974a7.5,7.5,0,0,1,7.5,7.511,7.506,7.506,0,0,1-7.5,7.511v7.974a7.5,7.5,0,0,1,7.5,7.511,7.5,7.5,0,0,1-7.5,7.511v7.974a7.505,7.505,0,0,1,7.5,7.511,7.5,7.5,0,0,1-7.5,7.511v7.975a7.5,7.5,0,0,1,7.5,7.511,7.506,7.506,0,0,1-7.5,7.511v6.676h93.033V-589.583" transform="translate(-71.633 990.583)" fill="#791134"/>
+    <path id="path494" d="M527.744-525.659l-15.521,8.16,2.964-17.283-12.556-12.24,17.352-2.521,7.761-15.724,7.76,15.724,17.353,2.521L540.3-534.781l2.964,17.283-15.52-8.16" transform="translate(-77.891 990.604)" fill="#791134"/>
+    <g id="g496" transform="translate(-55.931 669.34)">
+      <text id="text500" transform="translate(245.843 -200.585)" fill="#791134" font-size="49" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">COUPON</tspan></text>
+    </g>
+    <path id="path502" d="M599.373-468.1v-7.964a7.5,7.5,0,0,1-6.6-3.935H419.338L371-437.5,419.338-395h173.3a7.5,7.5,0,0,1,6.735-4.213v-7.963a7.5,7.5,0,0,1-7.5-7.5,7.5,7.5,0,0,1,7.5-7.5v-7.963a7.5,7.5,0,0,1-7.5-7.5,7.5,7.5,0,0,1,7.5-7.5V-453.1a7.5,7.5,0,0,1-7.5-7.5,7.5,7.5,0,0,1,7.5-7.5" transform="translate(-10.223 993.92)" fill="#791134"/>
+    <g id="g504" transform="translate(18.435 682.644)">
+      <text id="text508" transform="translate(425.418 -106.222)" fill="#fff" font-size="48" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">250$</tspan></text>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(-102.347 989.003)">
+      <path id="path520" d="M453.139-451.676v-.565h-252.4v-32.629H452.06v33.195h1.08v0h1.082V-486H198.578v34.891H454.222v-.565h-1.082" transform="translate(0)" fill="#791134"/>
+      <path id="path522" d="M453.139-417.915v-.565h-252.4v-32.631H452.06v33.2h1.08v0h1.082v-34.327H198.578v34.891H454.222v-.564h-1.082" transform="translate(0)" fill="#791134"/>
+      <path id="path524" d="M453.139-384.155v-.565h-252.4v-32.631H452.06v33.2h1.08v0h1.082V-418.48H198.578v34.891H454.222v-.565h-1.082" transform="translate(0)" fill="#791134"/>
+    </g>
+    <path id="path492" d="M202.606-525.659l-15.521,8.16,2.965-17.283-12.557-12.24,17.353-2.521,7.76-15.724,7.76,15.724,17.353,2.521-12.557,12.24,2.965,17.283-15.521-8.16" transform="translate(-63.633 988)" fill="#791134"/>
+    <text id="Dated:_11_3_2021" data-name="Dated: 11/3/2021" transform="translate(102 594)" fill="#791134" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Dated: 11/3/2021</tspan></text>
+    <text id="Key_Code:" data-name="Key Code:" transform="translate(102 525)" fill="#791134" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Key Code:</tspan></text>
+    <text id="Happy_Discount_" data-name="Happy Discount !" transform="translate(102 560)" fill="#791134" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Happy Discount !</tspan></text>
+  </g>
+</svg>

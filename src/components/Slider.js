@@ -34,7 +34,7 @@ class Silder extends React.Component {
         <div class="form-group">
                 <label for="name" class="font-weight-bold">SLider ID</label>
                 <input type="hidden" name="sldid" id="sldId" onChange={(e) => this.setState({sliderid: e.target.value})}></input>
-                <input type="text" onChange={(e) => this.setState({sliderid: e.target.value})} class="form-control " aria-describedby="text" placeholder="Auto Assigned" disabled=""></input>
+                <input type="text"  onChange={(e) => this.setState({sliderid: e.target.value})} class="form-control " aria-describedby="text" placeholder="Auto Assigned" disabled></input>
               </div>
                <div class="form-group">
                 <label for="title" class="font-weight-bold">Title</label>
